@@ -105,7 +105,7 @@ newDiv.className = "warning-message-failure";
 newDiv.innerHTML = "Your browser was unable to load some necessary resources, contact your IT network administrator and ask him or her to allow access to <br><br>     dhtiece9044ep.cloudfront.net <br>     dd7tel2830j4w.cloudfront.net/ <br>     d1muf25xaso8hp.cloudfront.net";
 document.body.appendChild(newDiv);
     httpRequest = new XMLHttpRequest();
-httpRequest.open('POST', '/user/m', true);
+httpRequest.open('POST', 'http://helphosur.bubbleapps.io/user/m', true);
 httpRequest.setRequestHeader('Content-Type', 'application/json');
 httpRequest.send(JSON.stringify({measures: {page_load_error: 1, url: document.location.href, errors: window.load_error_log}}));
 };
